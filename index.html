@@ -277,7 +277,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Mobile Navigation */
+        /* Mobile */
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -287,7 +287,7 @@
             cursor: pointer;
         }
 
-        /* Contact Section */
+        /* Contact */
         .contact-links {
             margin-top: 20px;
             display: flex;
@@ -660,14 +660,14 @@
     </footer>
 
     <script>
-        // Mobile menu toggle functionality
+        // for mobile
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
         
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             
-            // Change icon based on menu state
+            
             const icon = mobileMenuBtn.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -678,7 +678,7 @@
             }
         });
         
-        // Close menu when clicking on a link
+        
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -690,3 +690,4 @@
     </script>
 </body>
 </html>
+
